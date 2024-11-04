@@ -65,7 +65,7 @@
 }
 .photoleft img{
     width:100%;
-    height: fit-content;
+    height: 300px;
         border-radius: 20px;
         border: 1rem solid white;
 }
