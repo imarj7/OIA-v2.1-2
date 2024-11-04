@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="admission.css">
+    <link rel="shortcut icon" href="dtulogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+    <title>Admission</title>
+</head>
+<body>
+  <div id="loader-wrapper">
+    <div class="loader"></div>
+    <p id="loader-text1">Office of International Affairs</p>
+    <p id="loader-text2">Delhi Technological University</p>
+</div>
+
+    <div class="maincontainer" style="display: none;">
+        
+        <nav class="nav2" style="transition: background-color 0.3s ease-in-out;">
+            <div class="container3 navcontainer">
+                <a href="index.html" class="logocontainer"> 
+                    <img src="dtulogo.png" alt="dtulogo" class="logo">
+                    <div class="text">
+                        <h4>Office of International Affairs</h4>
+                        <p>Delhi Technological University</p>
+                    </div>
+                </a>
+                <ul class="nav_menu" style="right: -100%;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="dtuiss.html">DTU ISS</a></li>
+                    <li><a href="admission.html">Admission</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="http://dtu.ac.in/Web/studentCorner/" target="_blank">Student Corner</a></li>
+                </ul>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <svg width="30" height="30" viewBox="0 0 24 24">
+                        <path fill="white" d="M3 18h18v-2H3v2zM3 13h18v-2H3v2zM3 6v2h18V6H3z"></path>
+                    </svg>
+                </div>
+            </div>
+        </nav>
+
+        <div class="slider-container">
+            <div class="slider"></div>
+        </div>
+        <div class="aboutus">
+            <h2>Admission</h2>
+        </div>
+        <!-- <h2 class="content1">NIRF Ranking<p class="content1p">#29<span>th</span> (Engineering)</p><p class="content1p">#40<span>th</span> (University)</p></h2> -->
+
+        <div class="scroll-icon" id="scroll-icon"> <a href="#admission"></a></div>
+        <div class="marquee-container">
+            <div class="marquee">Admission closed  for Academic Year 2024-2025.</div>
+        </div>
+
+
+
+        <button onclick="goToTop()" id="goToTopBtn" title="Go to top">&#8679;</button>
+        <div class="container5" id="admission">
+            <div class="admissiongrid">
+              <div class="admissionleft">
+                <h1>Admission Criteria</h1>
+                <div class="admissiondiv">
+                  <ul>
+                    <!-- <li>
+                      1. Mode-1 (DASA)
+                      <a href="#" id="checkDASAEligibility" class="linkanchor">Check Eligibility</a>
+                    </li>
+                    <li>
+                      2. Mode-2 (ICCR)
+                      <a href="#" id="checkICCREligibility" class="linkanchor">Check Eligibility</a>
+                    </li> -->
+                    <li>
+                      <!-- 3. Mode-3 (Direct Admission via DTU Portal) -->
+                      <a href="#" id="checkDTUPortalEligibility" class="linkanchor">Check Eligibility</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="important-links-section">
+                  <h3>Important Links</h3>
+                  <ul>
+                    <li>
+                      <a href="https://saarthi.dtu.ac.in/admissions2024_25/international/sourceCode/index.php" target="_blank" rel="noopener noreferrer" class="linkanchor">
+                        DTU Admission Portal
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.dasanit.org/dasa2023/" target="_blank" rel="noopener noreferrer" class="linkanchor">
+                        DASA Official Website
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://a2ascholarships.iccr.gov.in/" target="_blank" rel="noopener noreferrer" class="linkanchor">
+                        ICCR Scholarship Portal
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="admissionright">
+                <div class="noticeheader">
+                  <h3>Announcements:</h3>
+                  <div class="notice-release">
+                    <div class="notice-icon"> <img src="notice.svg" alt=""></div>
+                    <p>
+                      <a href="https://dtu.ac.in/Web/Admission/brochure/2024/internation_nofi.pdf" target='blank'>Admission open to various UG/PG/Phd programmes for AY 2024-25</a>
+                      <span class="notice-date">- April 18, 2024</span>
+                    </p>
+                  </div>
+                  <div class="notice-release">
+                    <div class="notice-icon"> <img src="notice.svg" alt=""></div>
+                    <p>
+                      <a href="http://dtu.ac.in/Web/notice/2024/jan/file0140.pdf" target='blank'>Regarding Upgradation of Branch</a>
+                      <span class="notice-date"> - January 31, 2024</span>
+                    </p>
+                  </div>
+                  </div>
+                  <div class="brochurecontainer">
+                    <p class="brochureupdate">Admission list for academic year 2024 has been released on <a href="https://dtu.ac.in/" target="_blank">dtu.ac.in</a>.<br> Kindly visit the website for further updates.</p>
+                  </div>
+                  
+              </div>
+            </div>
+            <div id="eligibilityPopup" class="hidden">
+              <div class="eligibility-popup">
+                <div class="brochurecontainer">
+                  <p class="brochureupdate">The admission brochure for the Academic Year 2024-2025 has been released.</p>
+                </div>
+                <div class="coming-soon-container2">
+                  <!-- Added download button -->
+                  <a href="https://dtu.ac.in/Web/Admission/brochure/2024/brochure_international.pdf" target="_blank" class="download-brochure-btn">Download Brochure</a>
+                </div>
+                <!-- Close button -->
+                <button id="closeEligibilityPopup">Close</button>
+              </div>
+            </div>
+            
+              
+          </div>
+          
+        
+
+    
+<!-- //footer -->
+<footer class="footer">
+    <div class="container footer__container">
+        <div class="footer1">
+            <a href="index.html"><h4>Office of International Affairs</h4></a>
+            <p>Delhi Technological University,<br/>
+            Mechanical Department, First Floor<br/>Bawana Road ,110042, New Delhi </p>
+        </div>
+        <div class="footer2">
+            <h4>Permalinks</h4>
+            <ul class="permalinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer3">
+            <h4>Other links</h4>
+            <ul class="privacy">
+                <li><a href="https://a2ascholarships.iccr.gov.in/">ICCR portal</a></li>
+                <li><a href="https://saarthi.dtu.ac.in/admissions2024_25/international/sourceCode/index.php">DTU admission portal</a></li>
+                <li><a href="https://www.dasanit.org/dasa2023/">DASA portal</a></li>
+                <li><a href="admission.html">How to Apply</a></li>
+            </ul>
+        </div>
+        <div class="footer4">
+            <h4>Contact Us</h4>
+            <div>
+            <p>oia@dtu.ac.in</p>
+                <p>international.dtu@dtu.ac.in</p>
+            </div>
+        
+        <div class="footer5">
+            <ul class="social">
+                <li><a href="https://www.facebook.com/profile.php?id=100065103819173&sk=about_contact_and_basic_info"  target='_blank'><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/dtu_delhi" target='_blank'><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/dtu.delhi/" target='_blank'><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/delhi-technological-university-delhi-397129209/" target='_blank'><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+        </div>
+    </div>
+    </div>
+        <div class="footer__copyright">
+            <small>Copyright &copy; Delhi Technological University</small>
+            
+        </div>
+</footer>
+
+</div>
+
+    <script src="main.js"></script>
+    <script>
+        var scrolled = false;
+        var initialNavTop = 0;
+    
+        window.addEventListener('scroll', function() {
+            var nav = document.querySelector('.nav2');
+            var studentCorner = document.querySelector('.student-corner');
+            
+            if (!initialNavTop) {
+                initialNavTop = nav.offsetTop;
+            }
+    
+            if (window.scrollY > 0 && !scrolled) {
+                nav.style.backgroundColor = 'var(--color-bg)';
+                nav.style.top = '0';
+                scrolled = true;
+            } else if (window.scrollY <= 0 && scrolled) {
+                nav.style.backgroundColor = 'transparent';
+                nav.style.top = initialNavTop + 'px';
+                scrolled = false;
+            }
+        });
+        function scrollToSection() {
+            var headerwalaSection = document.getElementById('admission');
+            headerwalaSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        var scrollIcon = document.getElementById('scroll-icon');
+        scrollIcon.addEventListener('click', scrollToSection);
+
+        document.addEventListener('DOMContentLoaded', function() {
+  // const checkDASAEligibility = document.getElementById('checkDASAEligibility');
+  // const checkICCREligibility = document.getElementById('checkICCREligibility');
+  const checkDTUPortalEligibility = document.getElementById('checkDTUPortalEligibility');
+  const eligibilityPopup = document.getElementById('eligibilityPopup');
+
+  function openEligibilityPopup() {
+    eligibilityPopup.classList.remove('hidden');
+  }
+
+  function closeEligibilityPopup() {
+    eligibilityPopup.classList.add('hidden');
+  }
+
+  // checkDASAEligibility.addEventListener('click', openEligibilityPopup);
+  // checkICCREligibility.addEventListener('click', openEligibilityPopup);
+  checkDTUPortalEligibility.addEventListener('click', openEligibilityPopup);
+  document.getElementById('closeEligibilityPopup').addEventListener('click', closeEligibilityPopup);
+  function hideLoader() {
+    const loaderWrapper = document.getElementById('loader-wrapper');
+    const mainContent = document.querySelector('.maincontainer');
+    
+    loaderWrapper.style.display = 'none'; 
+    mainContent.style.display = 'block';  
+}
+
+
+window.addEventListener('load', function() {
+    setTimeout(hideLoader, 2000); 
+});
+});
+    </script>
+    
+</body>
+</html>

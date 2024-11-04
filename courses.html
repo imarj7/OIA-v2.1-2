@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="courses.css">
+    <link rel="shortcut icon" href="dtulogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+    <title>Courses</title>
+</head>
+<body>
+    <div id="loader-wrapper">
+        <div class="loader"></div>
+        <p id="loader-text1">Office of International Affairs</p>
+        <p id="loader-text2">Delhi Technological University</p>
+    </div>
+
+    <div class="maincontainer" style="display: none;">
+        <nav class="nav2" style="transition: background-color 0.3s ease-in-out;">
+            <div class="container3 navcontainer">
+                <a href="index.html" class="logocontainer"> 
+                    <img src="dtulogo.png" alt="dtulogo" class="logo">
+                    <div class="text">
+                        <h4>Office of International Affairs</h4>
+                        <p>Delhi Technological University</p>
+                    </div>
+                </a>
+                <ul class="nav_menu" style="right: -100%;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="dtuiss.html">DTU ISS</a></li>
+                    <li><a href="admission.html">Admission</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="http://dtu.ac.in/Web/studentCorner/" target="_blank">Student Corner</a></li>
+                </ul>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <svg width="30" height="30" viewBox="0 0 24 24">
+                        <path fill="white" d="M3 18h18v-2H3v2zM3 13h18v-2H3v2zM3 6v2h18V6H3z"></path>
+                    </svg>
+                </div>
+            </div>
+        </nav>
+        <div class="slider-container">
+            <div class="slider"></div>
+        </div>
+        <div class="aboutus">
+            <h2>Courses Offered</h2>
+        </div>
+        <!-- <h2 class="content1">NIRF Ranking<p class="content1p">#29<span>th</span> (Engineering)</p><p class="content1p">#40<span>th</span> (University)</p></h2> -->
+
+        <div class="scroll-icon" id="scroll-icon"> <a href="#courses"></a></div>
+        <div class="marquee-container">
+            <div class="marquee">Admission closed for Academic Year 2024-2025.</div>
+        </div>
+
+<!-- /courses/ -->
+        <section class="courses" id="courses">
+            <h2>Courses Offered</h2>
+            <div class="container20 courses__container" id="courseList">
+                <!-- Course items will be dynamically added here -->
+            </div>
+          </section>
+
+
+        
+          <button onclick="goToTop()" id="goToTopBtn" title="Go to top">&#8679;</button>
+
+<!-- //footer -->
+<footer class="footer" >
+    <div class="container footer__container">
+        <div class="footer1">
+            <a href="index.html"><h4>Office of International Affairs</h4></a>
+            <p>Delhi Technological University,<br/>
+            Mechanical Department, First Floor<br/>Bawana Road ,110042, New Delhi </p>
+        </div>
+        <div class="footer2">
+            <h4>Permalinks</h4>
+            <ul class="permalinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer3">
+            <h4>Other links</h4>
+            <ul class="privacy">
+                <li><a href="https://a2ascholarships.iccr.gov.in/">ICCR portal</a></li>
+                <li><a href="https://saarthi.dtu.ac.in/admissions2024_25/international/sourceCode/index.php">DTU admission portal</a></li>
+                <li><a href="https://www.dasanit.org/dasa2023/">DASA portal</a></li>
+                <li><a href="admission.html">How to Apply</a></li>
+            </ul>
+        </div>
+        <div class="footer4">
+            <h4>Contact Us</h4>
+            <div>
+            <p>oia@dtu.ac.in</p>
+                <p>international.dtu@dtu.ac.in</p>
+            </div>
+        
+        <div class="footer5">
+            <ul class="social">
+                <li><a href="https://www.facebook.com/profile.php?id=100065103819173&sk=about_contact_and_basic_info"  target='_blank'><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/dtu_delhi" target='_blank'><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/dtu.delhi/" target='_blank'><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/delhi-technological-university-delhi-397129209/" target='_blank'><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+        </div>
+    </div>
+    </div>
+        <div class="footer__copyright">
+            <small>Copyright &copy; Delhi Technological University</small>
+            
+        </div>
+</footer>
+
+</div>
+
+    <script src="main.js"></script>
+    <script>
+        var scrolled = false;
+        var initialNavTop = 0;
+    
+        window.addEventListener('scroll', function() {
+            var nav = document.querySelector('.nav2');
+            var studentCorner = document.querySelector('.student-corner');
+            
+            if (!initialNavTop) {
+                initialNavTop = nav.offsetTop;
+            }
+    
+            if (window.scrollY > 0 && !scrolled) {
+                nav.style.backgroundColor = 'var(--color-bg)';
+                nav.style.top = '0';
+                scrolled = true;
+            } else if (window.scrollY <= 0 && scrolled) {
+                nav.style.backgroundColor = 'transparent';
+                nav.style.top = initialNavTop + 'px';
+                scrolled = false;
+            }
+        });
+        function scrollToSection() {
+    var aboutMainContent = document.getElementById('courses');
+    aboutMainContent.scrollIntoView({ behavior: 'smooth' });
+}
+
+var scrollIcon = document.getElementById('scroll-icon');
+scrollIcon.addEventListener('click', scrollToSection);
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const courses = [
+      { title: "Bachelor in Technology", link: "http://dtu.ac.in/Web/Academics/bacheloroftechnology.php" },
+      { title: "Master in Technology", link: "http://dtu.ac.in/Web/AcademicsPG/mtech.php" },
+      { title: "Bachelor of Business Administration", link: "http://www.dtu.ac.in/Web/Departments/eastcampus/usme/usme.php" },
+      { title: "Bachelor of Arts in Economics", link: "http://dtu.ac.in/" },
+      { title: "Bachelor of Design", link: "http://www.dtu.ac.in/Web/Departments/design/about/index.php" },
+      { title: "Master of Science in Mathematics", link: "http://www.dtu.ac.in/Web/Departments/AppliedMathematics/about/" },
+      { title: "Master of Science in Physics", link: "http://www.dtu.ac.in/Web/Departments/AppliedPhysics/about/" },
+      { title: "Master of Science in Biotechnology", link: "http://www.dtu.ac.in/Web/Departments/BioTech/about/" },
+      { title: "Master of Science in Chemistry", link: "http://www.dtu.ac.in/Web/Departments/AppliedChemistry/about/" },
+      { title: "Master of Science in Interaction Design", link: "http://dtu.ac.in/" },
+      { title: "Master of Business Administration", link: "http://dtu.ac.in/Web/AcademicsPG/" },
+      { title: "Master of Business Administration in Business Analytics", link: "http://dtu.ac.in/Web/AcademicsPG/" },
+      { title: "Master of Business Administration (Family Business & Entrepreneurship)", link: "http://dtu.ac.in/Web/AcademicsPG/" },
+      { title: "Master of Business Administration (Entrepreneurship, Innovation & Venture Development)", link: "http://dtu.ac.in/Web/AcademicsPG/" }
+    ];
+  
+    const courseList = document.getElementById("courseList");
+  
+    courses.forEach(course => {
+      const courseItem = document.createElement("div");
+      courseItem.classList.add("course-item");
+  
+      const title = document.createElement("h3");
+      title.classList.add("course-title");
+      title.textContent = course.title;
+  
+      const link = document.createElement("a");
+      link.href = course.link;
+      link.textContent = "Learn More";
+      link.target = "_blank";
+      link.classList.add("coursebtn3");
+  
+      courseItem.appendChild(title);
+      courseItem.appendChild(link);
+  
+      courseList.appendChild(courseItem);
+      function hideLoader() {
+    const loaderWrapper = document.getElementById('loader-wrapper');
+    const mainContent = document.querySelector('.maincontainer');
+    
+    loaderWrapper.style.display = 'none'; 
+    mainContent.style.display = 'block';  
+}
+
+
+window.addEventListener('load', function() {
+    setTimeout(hideLoader, 2000); 
+});
+    });
+  });
+  
+  
+
+    </script>
+    
+</body>
+</html>

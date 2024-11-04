@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="shortcut icon" href="dtulogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+    <title>Contact Us</title>
+</head>
+<body>
+    <div id="loader-wrapper">
+        <div class="loader"></div>
+        <p id="loader-text1">Office of International Affairs</p>
+        <p id="loader-text2">Delhi Technological University</p>
+    </div>
+
+    <div class="maincontainer" style="display: none;">
+        
+        <nav class="nav2" style="transition: background-color 0.3s ease-in-out;">
+            <div class="container3 navcontainer">
+                <a href="index.html" class="logocontainer"> 
+                    <img src="dtulogo.png" alt="dtulogo" class="logo">
+                    <div class="text">
+                        <h4>Office of International Affairs</h4>
+                        <p>Delhi Technological University</p>
+                    </div>
+                </a>
+                <ul class="nav_menu" style="right: -100%;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="dtuiss.html">DTU ISS</a></li>
+                    <li><a href="admission.html">Admission</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="http://dtu.ac.in/Web/studentCorner/" target="_blank">Student Corner</a></li>
+                </ul>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <svg width="30" height="30" viewBox="0 0 24 24">
+                        <path fill="white" d="M3 18h18v-2H3v2zM3 13h18v-2H3v2zM3 6v2h18V6H3z"></path>
+                    </svg>
+                </div>
+            </div>
+        </nav>
+        <button onclick="goToTop()" id="goToTopBtn" title="Go to top">&#8679;</button>
+        <div class="slider-container">
+            <div class="slider"></div>
+        </div>
+        <div class="aboutus">
+            <h2>Contact Us</h2>
+        </div>
+        <!-- <h2 class="content1">NIRF Ranking<p class="content1p">#29<span>th</span> (Engineering)</p><p class="content1p">#40<span>th</span> (University)</p></h2> -->
+
+        <div class="scroll-icon" id="scroll-icon"> <a href="#contact"></a></div>
+        <div class="marquee-container">
+            <div class="marquee">Admission closed for Academic Year 2024-2025.</div>
+        </div>
+
+
+
+        <section class="contact-info" id="contact" >
+            <div class="info">
+                <h2>Emails</h2>
+                <p>General Inquiries: <a href="mailto:oia@dtu.ac.in">oia@dtu.ac.in</a></p>
+                <p>International Office: <a href="mailto:international.dtu@dtu.ac.in
+
+                    ">international.dtu@dtu.ac.in
+
+                </a></p>
+            </div>
+            <div class="info">
+                <h2>Location</h2>
+                <p>Delhi Technological University</p>
+                <p>Mechanical Department, First Floor
+                    </p>
+                <p>Bawana Road ,110042, New Delhi</p>
+            </div>
+            <div class="info">
+                <h2>Map</h2>
+                <button onclick="openMap()" class="mapka">View Map</button>
+                <div class="map-popup" id="mapPopup">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111936.93231595191!2d76.97984933853151!3d28.748547073511652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0187a8b50817%3A0x3fb991887e014819!2sOffice%20of%20external%20affairs%2C%20DTU!5e0!3m2!1sen!2sin!4v1706899215132!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                    <button onclick="closeMap()">Close Map</button>
+                </div>
+            </div>
+            <div class="info">
+                <h2>Social Media</h2>
+                <ul class="social-media">
+                    <li><a href="https://www.facebook.com/profile.php?id=100065103819173&sk=about_contact_and_basic_info"  target="_blank"><img src="facebook.svg" alt="Facebook"></a></li>
+                    <li><a href="https://twitter.com/dtu_delhi" target="_blank"><img src="twitter.webp" alt="Twitter" ></a></li>
+                    <li><a href="https://www.instagram.com/dtu.delhi/" target="_blank"><img src="instagram.svg" alt="Instagram" ></a></li>
+                    <li><a href="https://www.linkedin.com/in/delhi-technological-university-delhi-397129209/" target="_blank"><img src="linkedin.svg" alt="LinkedIn"></a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    
+<!-- //footer -->
+<footer class="footer">
+    <div class="container footer__container">
+        <div class="footer1">
+            <a href="index.html"><h4>Office of International Affairs</h4></a>
+            <p>Delhi Technological University,<br/>
+            Mechanical Department, First Floor<br/>Bawana Road ,110042, New Delhi </p>
+        </div>
+        <div class="footer2">
+            <h4>Permalinks</h4>
+            <ul class="permalinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer3">
+            <h4>Other links</h4>
+            <ul class="privacy">
+                <li><a href="https://a2ascholarships.iccr.gov.in/">ICCR portal</a></li>
+                <li><a href="https://saarthi.dtu.ac.in/admissions2024_25/international/sourceCode/index.php">DTU admission portal</a></li>
+                <li><a href="https://www.dasanit.org/dasa2023/">DASA portal</a></li>
+                <li><a href="admission.html">How to Apply</a></li>
+            </ul>
+        </div>
+        <div class="footer4">
+            <h4>Contact Us</h4>
+            <div>
+            <p>oia@dtu.ac.in</p>
+                <p>international.dtu@dtu.ac.in</p>
+            </div>
+        
+        <div class="footer5">
+            <ul class="social">
+                <li><a href="https://www.facebook.com/profile.php?id=100065103819173&sk=about_contact_and_basic_info"  target='_blank'><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/dtu_delhi" target='_blank'><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/dtu.delhi/" target='_blank'><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/delhi-technological-university-delhi-397129209/" target='_blank'><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+        </div>
+    </div>
+    </div>
+        <div class="footer__copyright">
+            <small>Copyright &copy; Delhi Technological University</small>
+            
+        </div>
+</footer>
+
+</div>
+
+    <script src="main.js"></script>
+    <script>
+        var scrolled = false;
+        var initialNavTop = 0;
+    
+        window.addEventListener('scroll', function() {
+            var nav = document.querySelector('.nav2');
+            var studentCorner = document.querySelector('.student-corner');
+            
+            if (!initialNavTop) {
+                initialNavTop = nav.offsetTop;
+            }
+    
+            if (window.scrollY > 0 && !scrolled) {
+                nav.style.backgroundColor = 'var(--color-bg)';
+                nav.style.top = '0';
+                scrolled = true;
+            } else if (window.scrollY <= 0 && scrolled) {
+                nav.style.backgroundColor = 'transparent';
+                nav.style.top = initialNavTop + 'px';
+                scrolled = false;
+            }
+        });
+        function scrollToSection() {
+            var headerwalaSection = document.getElementById('contact');
+            headerwalaSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        var scrollIcon = document.getElementById('scroll-icon');
+        scrollIcon.addEventListener('click', scrollToSection);
+        function openModal() {
+  currentPage = 1;
+  displayNotices();
+  updatePaginationButtons();
+  document.getElementById("modal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
+}
+function openMap() {
+            document.getElementById("mapPopup").style.display = "block";
+        }
+
+        function closeMap() {
+            document.getElementById("mapPopup").style.display = "none";
+        }
+        function hideLoader() {
+    const loaderWrapper = document.getElementById('loader-wrapper');
+    const mainContent = document.querySelector('.maincontainer');
+    
+    loaderWrapper.style.display = 'none'; 
+    mainContent.style.display = 'block';  
+}
+
+
+window.addEventListener('load', function() {
+    setTimeout(hideLoader, 2000); 
+});
+    </script>
+    
+</body>
+</html>
