@@ -63,7 +63,7 @@
     background-color: var(--color-bg);
     margin: auto;
 }
-.photoleft>img{
+.photoleft img{
     width:100%;
     height: fit-content;
         border-radius: 20px;
