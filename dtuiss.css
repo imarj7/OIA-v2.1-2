@@ -197,6 +197,10 @@
         margin:0rem 1rem 15rem 1rem ;
         gap:3rem;
     }
+     .photoleft{
+        height: max-content;
+    }
+  
     .contentright{
         height: max-content;
         margin-bottom: 0;
